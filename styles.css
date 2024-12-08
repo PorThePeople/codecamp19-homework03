@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+}
+
+.main {
+	/* border: solid 1px blue; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+	background-image: url(./images/background.webp);
+	background-size: cover;
+}
+
+.nav {
+	/* border: solid 1px red; */
+	display: flex;
+	justify-content: end;
+	padding-top: 15px;
+	width: 80%;
+}
+
+.nav a {
+	/* selects <a> tags that are in .nav element */
+	/* removes default styling of <a> tag */
+	text-decoration-line: none;
+}
+
+.content {
+	/* border: solid 1px orange; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.message {
+	font-size: 60px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.loading {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.loading p {
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+.loading-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+
+.loading-bar {
+	background-color: white;
+	height: 15px;
+	width: 100%;
+	box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.progress-bar {
+	background-color: lightgreen;
+	height: 100%;
+	width: 67%;
+}
+
+.loading-label {
+	/* border: solid 1px aqua; */
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.notify-me button {
+	/* selects <button> tags that are in .notify-me element */
+	background-color: lightgreen;
+	color: grey;
+	border: none;
+	padding: 10px 25px;
+	letter-spacing: 2px;
+}
+
+.social-container {
+	display: flex;
+	gap: 10px;
+}
+
+.social {
+	font-size: 25px;
+	border: solid 2px;
+	padding: 5px;
+	border-radius: 50%;
+	/* use flex to make perfect circle borders */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	border-top: solid 2px grey;
+	width: 80%;
+	padding-block: 15px;
+	color: grey;
+	text-align: center;
+}
